@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="/Css/contactanos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agrega tu consulta</h1>
+        <form id="contact-form" action="http://127.0.0.1:3000/submit-form" method="POST">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras y espacios" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras y espacios" required>
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" pattern="[0-9]+" title="Ingrese solo números" maxlength="9" required>
+            <label for="gmail">Correo electrónico:</label>
+            <input type="email" id="gmail" name="gmail" required>
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" required></textarea>
+
+            <!-- Contenedor de botones -->
+            <div class="button-container">
+                <button type="submit" id="submit-button">Enviar</button>
+                <button type="button" id="clear-button">Limpiar</button>
+            </div>
+        </form>
+        <div class="back-link">
+            <a href="index.html">Volver a la página principal</a>
+        </div>
+    </div>
+    <div id="sending-container" class="hidden">
+        <img src="sending.gif" alt="Enviando..." class="icon">
+        <p class="message">Enviando...</p>
+    </div>
+    <div id="sent-container" class="hidden">
+        <img src="sent.gif" alt="Formulario enviado" class="icon">
+        <p class="message">Formulario enviado</p>
+    </div>
+    <script src="/Js/contactanos.js"></script>
+    
+</body>
+</html>

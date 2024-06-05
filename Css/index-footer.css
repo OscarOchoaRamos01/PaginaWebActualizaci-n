@@ -1,0 +1,40 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    background: black;
+    min-height: 100 px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.social-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.iconos-elementos {
+    list-style: none;
+}
+
+.iconos {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0px 20px;
+    transition: 0.3s;
+}
+
+.iconos:hover {
+    transform: translateY(-15px);
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}

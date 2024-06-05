@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  min-height: 90vh;
+  padding-bottom: 120px;
+}
+
+header {
+  background: #fff;
+  /* Fondo blanco */
+  color: #000;
+  /* Texto negro */
+  padding: 10px 0;
+}
+
+
+#historia {
+  padding: 20px;
+  /* Relleno interno */
+  border-radius: 10px;
+  /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  display: flex;
+  /* Mostrar elementos en línea */
+  align-items: center;
+  /* Alinear elementos verticalmente al centro */
+  background-color: #f3f3f3;
+}
+
+.contenido-cuadro {
+  background-color: #f0f0f0;
+  /* Color de fondo del cuadro */
+  padding: 20px;
+  /* Relleno interno */
+  border-radius: 10px;
+  /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  width: 50%;
+  /* Ancho del cuadro */
+  margin-left: 50px;
+  /* Margen izquierdo */
+  margin-right: 20px;
+  /* Margen derecho */
+  text-align: justify;
+  /* Centra el texto */
+}
+
+.contenido-cuadro h3 {
+  margin: 0;
+  /* Elimina el margen del título */
+}
+
+
+#texto-lateral p {
+  margin: 0;
+  /* Sin margen */
+}
+
+#imagen-derecha {
+  flex: 1;
+  /* Utiliza el espacio restante */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Alinea el contenido hacia la derecha */
+  margin-right: 210px;
+  /* Agrega un margen a la derecha */
+}
+
+#imagen-derecha img {
+  max-width: 70%;
+  /* Ancho máximo del 70% */
+  height: auto;
+  /* Altura automática */
+  border-radius: 10%;
+}
+
+.boton {
+  background-color: #3498db;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color del texto */
+  padding: 15px 10px;
+  /* Relleno interno del botón */
+  border-radius: 5px;
+  /* Borde redondeado */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  transition: background-color 0.3s, color 0.3s;
+  /* Transición suave */
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+}
+
+.boton:hover {
+  background-color: #2980b9;
+  /* Cambia el color de fondo al pasar el ratón */
+}
+
+#tercera-seccion {
+  position: relative;
+  background-image: url('/Img/futbol.jpg');
+  background-size: cover;
+  /* Hace el efecto de img fija */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  /* Cambio de flex-end a center */
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+#tercera-seccion::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 13, 0.486);
+  z-index: 1;
+}
+
+#tercera-seccion .contenido {
+  position: relative;
+  z-index: 2;
+  /* Asegura que el contenido esté por encima del pseudo-elemento */
+  max-width: 90%;
+  /* Ancho máximo del cuadro */
+  padding: 20px;
+  /* Relleno interno */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color de fondo del cuadro */
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  /* margin-right: 25px; */
+  /* Eliminado para centrar el contenido */
+  text-align: center;
+}
+
+#tercera-seccion p {
+  text-align: justify;
+}
+
+
+#Reseña {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Cambia la alineación a la izquierda */
+  background-color: #f3f3f3;
+  gap: 20px;
+  /* Espacio entre los elementos */
+}
+
+.contenido-reseña {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  /* Ajusta el ancho para dar más espacio al video */
+  text-align: justify;
+  margin-left: 200px;
+  /* Empuja el cuadro hacia la derecha */
+}
+
+.contenido-reseña h3 {
+  margin: 0;
+}
+
+#video-derecha {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centra el video dentro de su contenedor */
+}
+
+#video-derecha video {
+  max-width: 70%;
+  height: auto;
+  border-radius: 5%;
+}
+
+#cuarta-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que las cartas se envuelvan en varias líneas si no caben en una sola */
+  justify-content: center;
+  /* Centra horizontalmente las cartas */
+  align-items: flex-start;
+  /* Alinea las cartas en la parte superior */
+  margin-top: 50px;
+  /* Agrega un margen superior */
+  padding-top: 50px;
+  /* Ajusta el espacio en la parte superior */
+  margin-bottom: -50px;
+  background-color: whithe;
+}
+
+
+.titulo-Cartas h2 {
+  text-align: center;
+  font-size: 40px;
+  /* Tamaño de fuente más grande */
+  margin-top: 2%;
+  /* Margen superior mayor para mover el texto hacia abajo */
+  background-color: whithe;
+}
+
+
+.card {
+  position: relative;
+  top: -80px;
+  /* Ajusta esta propiedad para mover las cartas hacia arriba */
+  width: 280px;
+  height: 300px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.mapa {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+
+  #historia {
+    flex-direction: column;
+  }
+
+  .contenido-cuadro {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  #imagen-derecha img {
+    display: none;
+  }
+
+  #cuarta-seccion {
+    margin-bottom: -55px;
+  }
+
+  iframe {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  #Reseña {
+    flex-direction: column;
+  }
+
+  .contenido-reseña {
+    width: 80%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+  #tercera-seccion {
+    height: 110vh;
+  }
+}
+
+
+#carrusel {
+  width: 100%;
+  /* Reducir el ancho de la sección */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%;
+  animation: slide 15s infinite;
+  /* Ajustar la duración  sea necesario */
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-item {
+  width: 33.33%;
+  position: relative;
+  height: 450px;
+  /* Establecer una altura fija */
+}
+
+.carousel-item:nth-child(1) {
+  background-color: #3886ec;
+}
+
+.carousel-item:nth-child(2) {
+  background-color: #81f7ff;
+}
+
+.carousel-item:nth-child(3) {
+  background-color: #6b6be7;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(0);
+  }
+
+  33.33% {
+    transform: translateX(-33.33%);
+  }
+
+  66% {
+    transform: translateX(-33.33%);
+  }
+
+  66.66% {
+    transform: translateX(-66.66%);
+  }
+
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
